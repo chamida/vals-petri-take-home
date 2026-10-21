@@ -1,0 +1,273 @@
+{
+ "source": "https://huggingface.co/datasets/Qwen/ProcessBench/resolve/main/math.json",
+ "sha256": "60cb0d7a69cbec98d43cf50855b9b7e7294599c3c9a24bdd031abd18c3b6b136",
+ "retrieved": "2026-10-18",
+ "note": "Original items used or adapted in partB/cases.py",
+ "items": {
+  "math-55": {
+   "id": "math-55",
+   "generator": "Meta-Llama-3-70B-Instruct",
+   "problem": "A hyperbola centered at the origin has foci at $(\\pm 7, 0),$ and passes through the point $(2, 12).$ If the equation of the hyperbola is \\[\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1,\\]where $a$ and $b$ are positive constants, compute the ordered pair $(a, b).$",
+   "steps": [
+    "The foci of a hyperbola of the form \\(\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1\\) are located at \\((\\pm c, 0)\\) where \\(c = \\sqrt{a^2 + b^2}\\). Therefore, in this case, we have that \\(c = 7\\), so \\(a^2 + b^2 = 49\\).",
+    "Furthermore, since \\((2, 12)\\) lies on the hyperbola, we know that \\(\\frac{2^2}{a^2} - \\frac{12^2}{b^2} = 1\\). This simplifies to \\(\\frac{4}{a^2} - \\frac{144}{b^2} = 1\\).",
+    "Multiplying through by \\(a^2 b^2\\), we obtain \\(4b^2 - 144a^2 = b^2 a^2\\). This can be rewritten as \\(b^2 (4 - a^2) = 144a^2\\).",
+    "Substituting \\(b^2 = 49 - a^2\\), we get \\((49 - a^2)(4 - a^2) = 144a^2\\). Expanding and simplifying, we have \\(196 - 8a^2 + a^4 = 144a^2\\), which simplifies to \\(a^4 - 152a^2 + 196 = 0\\).",
+    "Factoring the left side, we obtain \\((a^2 - 4)(a^2 - 49) = 0\\). This gives us \\(a^2 = 4\\) or \\(a^2 = 49\\).",
+    "However, if \\(a^2 = 49\\), then \\(b^2 = 0\\), which is impossible. Therefore, \\(a^2 = 4\\), so \\(b^2 = 49 - 4 = 45\\). Thus, \\((a, b) = (2, 3\\sqrt{5})\\).",
+    "Final Answer: The final answer is \\((2, 3\\sqrt{5})\\). I hope it is correct."
+   ],
+   "final_answer_correct": false,
+   "label": 3
+  },
+  "math-101": {
+   "id": "math-101",
+   "generator": "Meta-Llama-3-70B-Instruct",
+   "problem": "Let $r, s,$ and $t$ be solutions to the equation $2x^3 - 3x^2 + 4x - 1 = 0$. Find $r^2+s^2+t^2$.",
+   "steps": [
+    "Since $r, s,$ and $t$ are the roots of the cubic polynomial $f(x) = 2x^3 - 3x^2 + 4x - 1$, we know that\n\\[ f(x) = 2(x-r)(x-s)(x-t). \\]",
+    "Expanding this out, we have\n\\[ f(x) = 2(x^3 - (r+s+t)x^2 + (rs+st+tr)x - rst) = 2x^3 - 2(r+s+t)x^2 + 2(rs+st+tr)x - 2rst. \\]",
+    "Comparing this to the original expression for $f(x)$, we see that $r+s+t = \\frac{3}{2}$ and $rs+st+tr = 2$.",
+    "We want to find $r^2 + s^2 + t^2$, which is equal to $(r+s+t)^2 - 2(rs+st+tr)$. Therefore,\n\\[ r^2 + s^2 + t^2 = \\left(\\frac{3}{2}\\right)^2 - 2(2) = \\boxed{\\frac{1}{4}}. \\]",
+    "Final Answer: The final answer is \\(\\frac{1}{4}\\). I hope it is correct."
+   ],
+   "final_answer_correct": false,
+   "label": 3
+  },
+  "math-113": {
+   "id": "math-113",
+   "generator": "Meta-Llama-3-70B-Instruct",
+   "problem": "Find the product $CD$ of the integers $C$ and $D$ for which\n\\[\\frac{C}{x-3}+\\frac{D}{x+8}=\\frac{4x-23}{x^2+5x-24}\\]for all real values of $x$ except $-8$ and $3$.",
+   "steps": [
+    "We can multiply both sides of the equation by \\((x-3)(x+8)\\) to obtain\n\\[C(x+8) + D(x-3) = 4x - 23.\\] This must be true for all values of \\(x\\) except \\(-8\\) and \\(3\\).",
+    "Plugging in \\(x=0\\), we get\n\\[8C - 3D = -23.\\]",
+    "Plugging in \\(x=1\\), we get\n\\[9C - 2D = -19.\\]",
+    "Subtracting the first equation from the second, we have\n\\[C + D = 4,\\] and so \\(D = 4 - C\\).",
+    "Substituting this into the first equation gives us\n\\[11C - 12 = 23,\\] so \\(11C = 35\\), and \\(C = \\frac{35}{11}\\) and \\(D = \\frac{21}{11}\\).",
+    "Therefore, \\(CD = \\boxed{105/121}.\\) Final Answer: The final answer is \\(\\frac{105}{121}\\). I hope it is correct."
+   ],
+   "final_answer_correct": false,
+   "label": 4
+  },
+  "math-225": {
+   "id": "math-225",
+   "generator": "Qwen2-7B-Instruct",
+   "problem": "What is the radius of the circle inscribed in triangle $ABC$ if $AB = 10,$ $AC = 17,$ and $BC = 21$? Express your answer as a decimal to the nearest tenth.",
+   "steps": [
+    "To find the radius \\(r\\) of the inscribed circle (also known as the incircle) in triangle \\(ABC\\), we can use the formula for the area of a triangle when the semiperimeter and the inradius are known: \\(A = r \\cdot s\\), where \\(A\\) is the area of the triangle, \\(r\\) is the inradius, and \\(s\\) is the semiperimeter of the triangle. ",
+    "First, let's calculate the semiperimeter \\(s\\): \n\\[s = \\frac{AB + AC + BC}{2} = \\frac{10 + 17 + 21}{2} = 24\\]",
+    "Next, we need to find the area of triangle \\(ABC\\). We can use Heron's formula for this purpose: \n\\[A = \\sqrt{s(s - AB)(s - AC)(s - BC)} = \\sqrt{24(24 - 10)(24 - 17)(24 - 21)}\\] \n\\[= \\sqrt{24 \\cdot 14 \\cdot 7 \\cdot 3} = \\sqrt{6336} \\approx 79.6\\]",
+    "Now, using the formula \\(A = r \\cdot s\\), we can solve for \\(r\\): \n\\[r = \\frac{A}{s} = \\frac{79.6}{24} \\approx 3.32\\]",
+    "Thus, the radius of the circle inscribed in triangle \\(ABC\\) is approximately \\(3.3\\) to the nearest tenth."
+   ],
+   "final_answer_correct": false,
+   "label": 2
+  },
+  "math-298": {
+   "id": "math-298",
+   "generator": "Qwen2-7B-Instruct",
+   "problem": "Let $p(x)$ be a monic polynomial of degree 4.  Three of the roots of $p(x)$ are 1, 2, and 3.  Find $p(0) + p(4).$",
+   "steps": [
+    "Given that \\( p(x) \\) is a monic polynomial of degree 4 with roots at 1, 2, and 3, we can express \\( p(x) \\) as:\n\\[ p(x) = (x - 1)(x - 2)(x - 3)(x - r) \\]\nwhere \\( r \\) is the fourth root of the polynomial. Since \\( p(x) \\) is monic, its leading coefficient is 1.",
+    "The polynomial can also be written in expanded form:\n\\[ p(x) = x^4 - (1+2+3+r)x^3 + (1\\cdot2+1\\cdot3+2\\cdot3+1\\cdot r)x^2 - (1\\cdot2\\cdot3 + 1\\cdot2\\cdot r + 1\\cdot3\\cdot r + 2\\cdot3\\cdot r)x + (1\\cdot2\\cdot3\\cdot r) \\]",
+    "Given that it's monic, the coefficient of \\( x^4 \\) is 1, so the other coefficients follow directly from the roots. Thus, we have:\n- The coefficient of \\( x^3 \\) is \\( -(1+2+3+r) = -(6+r) \\).\n- The coefficient of \\( x^2 \\) is \\( (1\\cdot2+1\\cdot3+2\\cdot3+1\\cdot r) = (2+3+6+r) = (11+r) \\).\n- The coefficient of \\( x \\) is \\( -(1\\cdot2\\cdot3 + 1\\cdot2\\cdot r + 1\\cdot3\\cdot r + 2\\cdot3\\cdot r) = -(6 + 2r + 3r + 6r) = -(15r + 6) \\).\n- The constant term is \\( 1\\cdot2\\cdot3\\cdot r = 6r \\).",
+    "So, the polynomial can be rewritten as:\n\\[ p(x) = x^4 - (6+r)x^3 + (11+r)x^2 - (15r+6)x + 6r \\]",
+    "We're asked to find \\( p(0) + p(4) \\). First, let's calculate \\( p(0) \\):\n\\[ p(0) = 0^4 - (6+r)\\cdot0^3 + (11+r)\\cdot0^2 - (15r+6)\\cdot0 + 6r = 6r \\]",
+    "Now, let's calculate \\( p(4) \\):\n\\[ p(4) = 4^4 - (6+r)\\cdot4^3 + (11+r)\\cdot4^2 - (15r+6)\\cdot4 + 6r \\]\n\\[ = 256 - (6+r)\\cdot64 + (11+r)\\cdot16 - (15r+6)\\cdot4 + 6r \\]\n\\[ = 256 - 384 - 64r + 176 + 16r - 60r - 24 + 6r \\]\n\\[ = 256 - 384 + 176 - 64r + 16r - 60r + 6r - 24 \\]\n\\[ = 256 - 384 + 176 - 112r - 24 \\]\n\\[ = 128 - 112r \\]",
+    "Finally, summing \\( p(0) \\) and \\( p(4) \\):\n\\[ p(0) + p(4) = 6r + 128 - 112r = 128 - 106r \\]",
+    "However, without knowing the value of \\( r \\), we cannot simplify this further. Since \\( r \\) is an unknown root of the polynomial, it's not provided in the question and thus not solvable with the given information. Therefore, the final answer, based on the information given, is:\n\\[ p(0) + p(4) = 128 - 106r \\]"
+   ],
+   "final_answer_correct": false,
+   "label": 2
+  },
+  "math-662": {
+   "id": "math-662",
+   "generator": "Qwen2.5-7B-Instruct",
+   "problem": "Compute $\\tan 22.5^\\circ.$",
+   "steps": [
+    "To compute \\(\\tan 22.5^\\circ\\), we can use the half-angle formula for tangent, which is derived from the double-angle identity for tangent. The half-angle formula for tangent is given by: \\[ \\tan \\left( \\frac{\\theta}{2} \\right) = \\frac{1 - \\cos \\theta}{\\sin \\theta} \\]",
+    "In this case, we need to find \\(\\tan 22.5^\\circ\\), which is \\(\\tan \\left( \\frac{45^\\circ}{2} \\right)\\). So, let \\(\\theta = 45^\\circ\\). We know that: \\[ \\cos 45^\\circ = \\frac{1}{\\sqrt{2}} = \\frac{\\sqrt{2}}{2}, \\quad \\sin 45^\\circ = \\frac{1}{\\sqrt{2}} = \\frac{\\sqrt{2}}{2} \\]",
+    "Substituting these values into the half-angle formula, we get: \\[ \\tan 22.5^\\circ = \\frac{1 - \\cos 45^\\circ}{\\sin 45^\\circ} = \\frac{1 - \\frac{\\sqrt{2}}{2}}{\\frac{\\sqrt{2}}{2}} = \\frac{\\frac{2 - \\sqrt{2}}{2}}{\\frac{\\sqrt{2}}{2}} = \\frac{2 - \\sqrt{2}}{\\sqrt{2}} \\]",
+    "To simplify \\(\\frac{2 - \\sqrt{2}}{\\sqrt{2}}\\), we can rationalize the denominator: \\[ \\frac{2 - \\sqrt{2}}{\\sqrt{2}} \\cdot \\frac{\\sqrt{2}}{\\sqrt{2}} = \\frac{(2 - \\sqrt{2}) \\sqrt{2}}{2} = \\frac{2\\sqrt{2} - 2}{2} = \\frac{2(\\sqrt{2} - 1)}{2} = \\sqrt{2} - 1 \\]",
+    "Therefore, the value of \\(\\tan 22.5^\\circ\\) is: \\[ \\boxed{\\sqrt{2} - 1} \\]"
+   ],
+   "final_answer_correct": true,
+   "label": -1
+  },
+  "math-269": {
+   "id": "math-269",
+   "generator": "Llama-3.1-8B-Instruct",
+   "problem": "When Trilisa takes pictures, they turn out with probability $\\frac{1}{5}$. She wants to take enough pictures so that the probability of at least one turning out is at least $\\frac{3}{4}$. How few pictures can she take to accomplish this?",
+   "steps": [
+    "To solve this problem, we need to find the smallest number of pictures Trilisa needs to take such that the probability of at least one turning out is at least $\\frac{3}{4}$. Let's define the probability of a picture turning out as $p = \\frac{1}{5}$, and the number of pictures as $n$. We want to find the smallest $n$ such that the probability of at least one picture turning out is at least $\\frac{3}{4}$.",
+    "The probability of at least one picture turning out is equal to 1 minus the probability of none of the pictures turning out. Since each picture has a probability of $p = \\frac{1}{5}$ of turning out, the probability of a picture not turning out is $q = 1 - p = \\frac{4}{5}$. So, the probability of none of the $n$ pictures turning out is $q^n$, and the probability of at least one picture turning out is $1 - q^n$. We want to find the smallest $n$ such that $1 - q^n \\geq \\frac{3}{4}$.",
+    "Now, let's plug in $q = \\frac{4}{5}$ and simplify:\n$$ \\begin{align*}\n1 - q^n &\\geq \\frac{3}{4} \\\\\n1 - (\\frac{4}{5})^n &\\geq \\frac{3}{4} \\\\\n(\\frac{4}{5})^n &\\leq \\frac{1}{4}\n\\end{align*} $$",
+    "To solve for $n$, we can take the logarithm of both sides:\n$$ \\begin{align*}\n\\log((\\frac{4}{5})^n) &\\leq \\log(\\frac{1}{4}) \\\\\nn \\log(\\frac{4}{5}) &\\leq \\log(\\frac{1}{4}) \\\\\nn &\\leq \\frac{\\log(\\frac{1}{4})}{\\log(\\frac{4}{5})}\n\\end{align*} $$",
+    "Using a calculator, we get:\n$$ \\begin{align*}\nn &\\leq \\frac{\\log(\\frac{1}{4})}{\\log(\\frac{4}{5})} \\\\\n&\\approx \\frac{-0.39794}{-0.2231435513} \\\\\n&\\approx 1.78\n\\end{align*} $$",
+    "Since $n$ must be an integer, the smallest $n$ that satisfies the inequality is $n = 2$. Therefore, Trilisa needs to take at least $\\boxed{2}$ pictures to ensure that the probability of at least one turning out is at least $\\frac{3}{4}$."
+   ],
+   "final_answer_correct": false,
+   "label": 3
+  },
+  "math-244": {
+   "id": "math-244",
+   "generator": "Qwen2-7B-Instruct",
+   "problem": "Two cards are chosen at random from a standard 52-card deck.  What is the probability that both are face cards (Jacks, Queens, or Kings)?",
+   "steps": [
+    "To find the probability that both cards drawn are face cards (Jacks, Queens, or Kings) from a standard 52-card deck, we can follow these steps: First, identify the total number of face cards in the deck. There are 3 face cards (Jack, Queen, King) in each of the 4 suits (hearts, diamonds, clubs, spades). So, there are \\(3 \\times 4 = 12\\) face cards in total.",
+    "Second, calculate the probability of drawing a face card on the first draw. The probability of drawing a face card on the first draw is the number of face cards divided by the total number of cards in the deck. This gives us \\(\\frac{12}{52} = \\frac{3}{13}\\).",
+    "Third, calculate the probability of drawing a face card on the second draw given that the first card was also a face card. After drawing one face card, there are now 11 face cards left and a total of 51 cards remaining in the deck. Thus, the probability of drawing another face card is \\(\\frac{11}{51}\\).",
+    "Fourth, calculate the overall probability of both events happening (drawing a face card twice in a row). To find this, multiply the probabilities of each individual event: \\[\\frac{3}{13} \\times \\frac{11}{51}\\]",
+    "Fifth, simplify the expression. Multiply the numerators together and the denominators together: \\[\\frac{3 \\times 11}{13 \\times 51} = \\frac{33}{663}\\] Simplify the fraction by dividing both numerator and denominator by their greatest common divisor, which is 33: \\[\\frac{33 \\div 33}{663 \\div 33} = \\frac{1}{21}\\]",
+    "Therefore, the probability that both cards drawn are face cards is \\(\\frac{1}{21}\\)."
+   ],
+   "final_answer_correct": false,
+   "label": 4
+  },
+  "math-272": {
+   "id": "math-272",
+   "generator": "Qwen2.5-Math-7B-Instruct",
+   "problem": "What is the simplified value of $\\frac{10! + 11! + 12!}{10! + 11!}$?",
+   "steps": [
+    "To simplify the expression \\(\\frac{10! + 11! + 12!}{10! + 11!}\\), we start by factoring out the common terms in both the numerator and the denominator. First, let's rewrite \\(11!\\) and \\(12!\\) in terms of \\(10!\\):\n\\[ 11! = 11 \\times 10! \\]\n\\[ 12! = 12 \\times 11 \\times 10! = 12 \\times 11 \\times 10! \\]",
+    "Now, substitute these expressions into the original fraction:\n\\[ \\frac{10! + 11! + 12!}{10! + 11!} = \\frac{10! + (11 \\times 10!) + (12 \\times 11 \\times 10!)}{10! + (11 \\times 10!)} \\]",
+    "Factor out \\(10!\\) from both the numerator and the denominator:\n\\[ \\frac{10!(1 + 11 + 12 \\times 11)}{10!(1 + 11)} \\]",
+    "Since \\(10!\\) is a common factor in both the numerator and the denominator, it cancels out:\n\\[ \\frac{10!(1 + 11 + 12 \\times 11)}{10!(1 + 11)} = \\frac{1 + 11 + 12 \\times 11}{1 + 11} \\]",
+    "Next, calculate the values inside the parentheses:\n\\[ 1 + 11 = 12 \\]\n\\[ 12 \\times 11 = 132 \\]\n\\[ 1 + 11 + 132 = 145 \\]",
+    "Substitute these values back into the fraction:\n\\[ \\frac{145}{12} \\]",
+    "Thus, the simplified value of \\(\\frac{10! + 11! + 12!}{10! + 11!}\\) is:\n\\[ \\boxed{\\frac{145}{12}} \\]"
+   ],
+   "final_answer_correct": false,
+   "label": 4
+  },
+  "math-226": {
+   "id": "math-226",
+   "generator": "Qwen2.5-Math-72B-Instruct",
+   "problem": "$N^2$ is a divisor of $8!$. What is the greatest possible integer value of $N$?  (Reminder: For a positive integer $n$, the expression $n!$ stands for the product of the integers from 1 up to (and including) $n$.)",
+   "steps": [
+    "To determine the greatest possible integer value of \\( N \\) such that \\( N^2 \\) is a divisor of \\( 8! \\), we first need to find the prime factorization of \\( 8! \\). The factorial of 8 is calculated as follows: \\[ 8! = 8 \\times 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 40320. \\]",
+    "Next, we find the prime factorization of 40320: \\[ 8! = 40320 = 2^7 \\times 3^2 \\times 5 \\times 7. \\]",
+    "For \\( N^2 \\) to be a divisor of \\( 8! \\), \\( N \\) must be composed of the prime factors of \\( 8! \\) with each prime factor raised to a power that, when squared, does not exceed the corresponding power in the prime factorization of \\( 8! \\). Therefore, if \\( N = 2^a \\times 3^b \\times 5^c \\times 7^d \\), then \\( N^2 = 2^{2a} \\times 3^{2b} \\times 5^{2c} \\times 7^{2d} \\) must be a divisor of \\( 2^7 \\times 3^2 \\times 5 \\times 7 \\).",
+    "This gives us the following inequalities: \\[ 2a \\leq 7, \\quad 2b \\leq 2, \\quad 2c \\leq 1, \\quad 2d \\leq 7. \\]",
+    "Solving these inequalities, we get: \\[ a \\leq \\frac{7}{2} = 3.5 \\implies a \\leq 3, \\quad b \\leq \\frac{2}{2} = 1, \\quad c \\leq \\frac{1}{2} = 0.5 \\implies c \\leq 0, \\quad d \\leq \\frac{7}{2} = 3.5 \\implies d \\leq 3. \\]",
+    "Thus, the largest possible value for \\( N \\) is \\( 2^3 \\times 3^1 \\times 5^0 \\times 7^3 = 8 \\times 3 \\times 7 = 168 \\).",
+    "Therefore, the greatest possible integer value of \\( N \\) is: \\[ \\boxed{168}. \\]"
+   ],
+   "final_answer_correct": false,
+   "label": 3
+  },
+  "math-175": {
+   "id": "math-175",
+   "generator": "Llama-3.1-8B-Instruct",
+   "problem": "The quadratic $4x^2+2x-1$ can be written in the form $a(x+b)^2+c$, where $a$, $b$, and $c$ are constants. What is $a+b+c$?",
+   "steps": [
+    "To rewrite the given quadratic \\(4x^2 + 2x - 1\\) in the form \\(a(x + b)^2 + c\\), we need to complete the square.",
+    "First, factor out the leading coefficient from the first two terms. We have \\(4x^2 + 2x - 1\\). Factoring out 4 from the first two terms gives: \\(4(x^2 + \\frac{1}{2}x) - 1\\).",
+    "Next, calculate the value that needs to be added inside the parentheses to make it a perfect square trinomial. For the expression \\((x + \\frac{1}{4})^2\\), when expanded, we get: \\((x + \\frac{1}{4})^2 = x^2 + \\frac{1}{2}x + \\frac{1}{16}\\). Comparing this with \\(x^2 + \\frac{1}{2}x\\), we need to add \\(\\frac{1}{16}\\) inside the parentheses.",
+    "Rewrite the expression with the calculated value added inside the parentheses. Adding \\(\\frac{1}{16}\\) inside the parentheses gives: \\(4(x^2 + \\frac{1}{2}x + \\frac{1}{16}) - 1 - \\frac{4}{16}\\).",
+    "Simplify the expression by evaluating the subtraction. Subtracting \\(\\frac{4}{16}\\) is equivalent to subtracting \\(\\frac{1}{4}\\), so the expression becomes: \\(4(x^2 + \\frac{1}{2}x + \\frac{1}{16}) - \\frac{5}{4}\\).",
+    "Write the expression as a perfect square trinomial. Using the fact that \\(4(x^2 + \\frac{1}{2}x + \\frac{1}{16})\\) equals \\((2x + \\frac{1}{4})^2\\), we can rewrite the expression as: \\((2x + \\frac{1}{4})^2 - \\frac{5}{4}\\).",
+    "Identify the values of \\(a\\), \\(b\\), and \\(c\\). Comparing \\((2x + \\frac{1}{4})^2 - \\frac{5}{4}\\) with \\(a(x + b)^2 + c\\), we can see that \\(a = 4\\), \\(b = \\frac{1}{8}\\), and \\(c = -\\frac{5}{4}\\).",
+    "Find the sum of \\(a\\), \\(b\\), and \\(c\\). Summing up the values of \\(a\\), \\(b\\), and \\(c\\) gives: \\(a + b + c = 4 + \\frac{1}{8} - \\frac{5}{4}\\). Simplifying this expression gives: \\(a + b + c = \\frac{32}{8} + \\frac{1}{8} - \\frac{20}{8}\\). This simplifies to: \\(a + b + c = \\frac{13}{8}\\)."
+   ],
+   "final_answer_correct": false,
+   "label": 5
+  },
+  "math-762": {
+   "id": "math-762",
+   "generator": "Qwen2-7B-Instruct",
+   "problem": "Find the infinite sum of\n$$\\frac{1}{7} + \\frac{2}{7^2} + \\frac{1}{7^3} + \\frac{2}{7^4} + \\cdots$$",
+   "steps": [
+    "To find the infinite sum of the given series, we can first express it in a more manageable form. The series is: \\[S = \\frac{1}{7} + \\frac{2}{7^2} + \\frac{1}{7^3} + \\frac{2}{7^4} + \\cdots\\] Notice that this series alternates between two patterns: a term with 1 followed by a term with 2, each repeated infinitely.",
+    "Let's break this down into two separate series and then combine them: \\[S_1 = \\frac{1}{7} + \\frac{1}{7^3} + \\frac{1}{7^5} + \\cdots\\] \\[S_2 = \\frac{2}{7^2} + \\frac{2}{7^4} + \\frac{2}{7^6} + \\cdots\\] Both \\(S_1\\) and \\(S_2\\) are geometric series, which can be summed using the formula for the sum of an infinite geometric series: \\[S_{\\text{geo}} = \\frac{a}{1 - r}\\] where \\(a\\) is the first term and \\(r\\) is the common ratio.",
+    "For \\(S_1\\): - \\(a_1 = \\frac{1}{7}\\) - \\(r_1 = \\frac{1}{7^2}\\) \\[S_1 = \\frac{\\frac{1}{7}}{1 - \\frac{1}{7^2}} = \\frac{\\frac{1}{7}}{\\frac{7^2 - 1}{7^2}} = \\frac{1}{7} \\cdot \\frac{7^2}{7^2 - 1} = \\frac{1}{7} \\cdot \\frac{49}{48} = \\frac{49}{336} = \\frac{7}{48}\\]",
+    "For \\(S_2\\): - \\(a_2 = \\frac{2}{7^2}\\) - \\(r_2 = \\frac{1}{7^2}\\) \\[S_2 = \\frac{\\frac{2}{7^2}}{1 - \\frac{1}{7^2}} = \\frac{\\frac{2}{7^2}}{\\frac{7^2 - 1}{7^2}} = \\frac{2}{7^2} \\cdot \\frac{7^2}{7^2 - 1} = \\frac{2}{48} = \\frac{1}{24}\\]",
+    "The total sum \\(S\\) is the sum of \\(S_1\\) and \\(S_2\\): \\[S = S_1 + S_2 = \\frac{7}{48} + \\frac{1}{24} = \\frac{7}{48} + \\frac{2}{48} = \\frac{9}{48} = \\frac{3}{16}\\]",
+    "Therefore, the infinite sum of the given series is \\(\\boxed{\\frac{3}{16}}\\)."
+   ],
+   "final_answer_correct": true,
+   "label": -1
+  },
+  "math-5": {
+   "id": "math-5",
+   "generator": "Qwen2-72B-Instruct",
+   "problem": "Suppose that $\\Join$ is an operation defined by $x \\Join y = (x+2)(y-3)$. What is $((t) \\Join (t+2)) - ((t+1) \\Join (t+1))$?",
+   "steps": [
+    "To solve this problem, we need to apply the given operation $\\Join$ to the expressions provided and then simplify the resulting expression.",
+    "First, let's apply the operation $\\Join$ to $(t) \\Join (t+2)$: \\[ (t) \\Join (t+2) = (t + 2)(t + 2 - 3) = (t + 2)(t - 1) \\]",
+    "Now, let's apply the operation $\\Join$ to $(t+1) \\Join (t+1)$: \\[ (t+1) \\Join (t+1) = (t + 1 + 2)(t + 1 - 3) = (t + 3)(t - 2) \\]",
+    "Next, we need to subtract the second result from the first one: \\[ ((t) \\Join (t+2)) - ((t+1) \\Join (t+1)) = (t + 2)(t - 1) - (t + 3)(t - 2) \\]",
+    "Let's simplify the expression: \\[ = (t^2 + t - 2t - 2) - (t^2 + 3t - 2t - 6) \\] \\[ = (t^2 - t - 2) - (t^2 + t - 6) \\] \\[ = t^2 - t - 2 - t^2 - t + 6 \\] \\[ = -2t + 4 \\]",
+    "Therefore, the solution to the problem is: \\[ \\boxed{-2t + 4} \\]"
+   ],
+   "final_answer_correct": false,
+   "label": 4
+  },
+  "math-81": {
+   "id": "math-81",
+   "generator": "Llama-3.1-8B-Instruct",
+   "problem": "Simplify this expression: $$\\left(2x+\\frac{3}{2} (4x-6)\\right)-4\\left( -(2-x)+\\frac{x}{2}\\right)$$",
+   "steps": [
+    "To simplify the given expression, we will follow the order of operations (PEMDAS).",
+    "First, distribute the terms inside the parentheses: \n$$\\left(2x+\\frac{3}{2} (4x-6)\\right)-4\\left( -(2-x)+\\frac{x}{2}\\right)$$ \n$$= \\left(2x + 3(2x-3)\\right) - 4\\left(-(2-x) + \\frac{x}{2}\\right)$$",
+    "Second, simplify the terms inside the parentheses: \n$$= \\left(2x + 6x - 9\\right) - 4\\left(-2+x - \\frac{x}{2}\\right)$$ \n$$= (8x - 9) - 4\\left(-2 + x - \\frac{x}{2}\\right)$$",
+    "Third, distribute the negative sign to the terms inside the second set of parentheses: \n$$= (8x - 9) - 4\\left(-2 - x + \\frac{x}{2}\\right)$$",
+    "Fourth, distribute the 4 to the terms inside the parentheses: \n$$= (8x - 9) - (-8 - 4x + 2x)$$ \n$$= (8x - 9) + (8 + 2x)$$",
+    "Finally, combine like terms: \n$$= 8x - 9 + 8 + 2x$$ \n$$= 10x - 1$$",
+    "The simplified expression is: \n$$\\boxed{10x - 1}$$"
+   ],
+   "final_answer_correct": false,
+   "label": 2
+  },
+  "math-109": {
+   "id": "math-109",
+   "generator": "Meta-Llama-3-8B-Instruct",
+   "problem": "The number of cubic inches in the volume of a 6-inch high cylindrical can equals the number of square inches in the area of the label that covers the lateral surface of the can. In inches, what is the radius of the can?",
+   "steps": [
+    "Let's break down the problem step by step. First, the volume of a cylinder is given by the formula: V = \u03c0r^2h, where r is the radius and h is the height. In this case, the height (h) is 6 inches.",
+    "We are told that the volume of the cylinder (in cubic inches) is equal to the area of the label (in square inches). Let's denote the area of the label as A.",
+    "The area of the label is the lateral surface area of the cylinder, which is given by the formula: A = 2\u03c0rh, since it's the area of a rectangle with width 2\u03c0r and length h.",
+    "We can set up an equation based on the given information: \u03c0r^2(6) = 2\u03c0rh.",
+    "Simplify the equation: 6r^2 = 12r.",
+    "Divide both sides by 2r: 3r = 12.",
+    "Divide both sides by 3: r = 4.",
+    "So, the radius of the can is \\boxed{4} inches."
+   ],
+   "final_answer_correct": false,
+   "label": 5
+  },
+  "math-315": {
+   "id": "math-315",
+   "generator": "Qwen2-1.5B-Instruct",
+   "problem": "What is $441_{10}$ in base $7$?",
+   "steps": [
+    "To convert the decimal number $441_{10}$ to base $7$, we divide $441$ by $7$ repeatedly, keeping track of the remainders, until we reach $0$. The base $7$ representation will be the remainders read in reverse order.",
+    "First, $441 \\div 7 = 63$ with a remainder of $0$.",
+    "Second, $63 \\div 7 = 9$ with a remainder of $0$.",
+    "Third, $9 \\div 7 = 1$ with a remainder of $2$.",
+    "Fourth, $1 \\div 7 = 0$ with a remainder of $1$.",
+    "Reading the remainders in reverse order, we find that $441_{10} = 1202_7$. So, $441_{10}$ in base $7$ is $\\boxed{1202_7}$."
+   ],
+   "final_answer_correct": false,
+   "label": 5
+  },
+  "math-322": {
+   "id": "math-322",
+   "generator": "Qwen2.5-7B-Instruct",
+   "problem": "A solid 6-by-6-by-6 cube is constructed from unit cubes and the entire outer surface is painted. What fraction of the unit cubes has at least two painted faces? Express your answer as a common fraction.",
+   "steps": [
+    "To determine the fraction of unit cubes in a 6-by-6-by-6 cube that have at least two painted faces after the entire outer surface is painted, we will follow these steps: First, calculate the total number of unit cubes. The total number of unit cubes in a 6-by-6-by-6 cube is: \\[ 6 \\times 6 \\times 6 = 216 \\]",
+    "Second, identify the unit cubes with different numbers of painted faces.",
+    "Cubes with 3 painted faces are the corner cubes. There are 8 corners in a cube.",
+    "Cubes with 2 painted faces are the cubes on the edges but not at the corners. Each edge of the cube has 4 such cubes (since the two corner cubes are already counted), and there are 12 edges in a cube. Therefore, the number of edge cubes is: \\[ 12 \\times (4 - 2) = 12 \\times 2 = 24 \\]",
+    "Cubes with 1 painted face are the cubes on the faces but not on the edges. Each face of the cube has a 4-by-4 grid of such cubes (since the edge cubes are already counted), and there are 6 faces in a cube. Therefore, the number of face cubes is: \\[ 6 \\times (4 \\times 4 - 12 + 4) = 6 \\times (16 - 12) = 6 \\times 4 = 48 \\]",
+    "Cubes with 0 painted faces are the inner cubes, forming a 4-by-4-by-4 cube inside the original cube. Therefore, the number of inner cubes is: \\[ 4 \\times 4 \\times 4 = 64 \\]",
+    "Third, count the unit cubes with at least two painted faces. We need to count the cubes with 2 or 3 painted faces: \\[ 8 \\text{ (corner cubes)} + 24 \\text{ (edge cubes)} = 32 \\]",
+    "Fourth, calculate the fraction of unit cubes with at least two painted faces. The fraction is the number of unit cubes with at least two painted faces divided by the total number of unit cubes: \\[ \\frac{32}{216} = \\frac{4}{27} \\]",
+    "Thus, the fraction of the unit cubes that have at least two painted faces is \\(\\boxed{\\frac{4}{27}}\\)."
+   ],
+   "final_answer_correct": false,
+   "label": 3
+  }
+ }
+}

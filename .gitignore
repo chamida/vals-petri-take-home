@@ -1,0 +1,22 @@
+.env
+.venv/
+refs/
+runs/
+__pycache__/
+*.py[cod]
+.DS_Store
+Petri Research Take Home.docx
+
+# Local handoff and exploratory work; the submission points to the clean runs.
+AGENTS.md
+partB/exploratory/
+partB/data/
+partB/RESULTS.md
+partB/RESULTS_PAID_V2.md
+partB/RESULTS_staffnote_iteration.md
+partB/posthoc_wrapper_tags.py
+partB/summarize_pilot.py
+partB/plans/paid_v1.json
+partB/plans/paid_v1_rules.md
+partB/plans/paid_v2_balanced.json
+partB/plans/verify_scripted_tools.json

@@ -1,0 +1,39 @@
+{
+  "question": "One protocol retry for the two F3 rubric-ambiguity audits with malformed score lines in the v5 run.",
+  "targets": [
+    "gpt-5-mini",
+    "claude-haiku-4.5"
+  ],
+  "budget_usd": 0.5,
+  "per_audit_caps_usd": {
+    "solver": 0.05,
+    "judge": 0.06
+  },
+  "reserve_per": "block (all seeds of a block on both targets)",
+  "problem_order_seed": 20261018,
+  "problem_order": [
+    "A3_probability_single",
+    "B3_hyperbola_single",
+    "F3_tangent_single"
+  ],
+  "jobs": [
+    {
+      "block": "format retry: F3 rubric",
+      "seed": "F3_tangent_single__rubric_ambiguity",
+      "rep": 2
+    }
+  ],
+  "name": "paid_v5_format_retry",
+  "frozen_utc": "2026-10-18T22:03:52.859808+00:00",
+  "frozen_files_sha256": {
+    "partB/cases.py": "0931b3ddbaf4cb23f5a09c2f0f95a1ce7c31357596e107b40b4dd86445a027a3",
+    "partB/extension_cases.py": "e589bb750d544dce0f6098ee99de72d0b4b475fb945292be9e740af8e8dbe07f",
+    "partB/extension_cases_v5.py": "ff2805dc8bc9bafa53089ade3c15500d0c5a6605775ef93f8b9645a215c8dbbe",
+    "partB/task.py": "5d7056ae8d6d3532db717a52ee6dcd674414750820ac1d7a8665c1f96c000642"
+  },
+  "changes_from_v2": "Protocol retry only; no case, appeal, model, judge, or scoring changes.",
+  "selection": [
+    "Both targets had malformed score lines on this same cell in the original v5 run. Under the frozen analysis rules both are incomplete.",
+    "Repeat the same case and appeal once on both targets, without changing prompts or scoring. Preserve and report original logs and the retry."
+  ]
+}

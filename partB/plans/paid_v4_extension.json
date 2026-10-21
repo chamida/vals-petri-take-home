@@ -1,0 +1,175 @@
+{
+  "question": "Does the same full appeal-type matrix show similar behavior on four additional single-error problems?",
+  "targets": [
+    "gpt-5-mini",
+    "claude-haiku-4.5"
+  ],
+  "budget_usd": 4.0,
+  "per_audit_caps_usd": {
+    "solver": 0.05,
+    "judge": 0.06
+  },
+  "reserve_per": "block (all seeds of a block on both targets)",
+  "problem_order_seed": 20261018,
+  "problem_order": [
+    "C3_partial_fraction_single",
+    "D3_divisor_single",
+    "H2_simplify_single",
+    "K2_cube_single"
+  ],
+  "jobs": [
+    {
+      "block": "extension problem 1: C3_partial_fraction_single",
+      "seed": "C3_partial_fraction_single__neutral",
+      "rep": 1
+    },
+    {
+      "block": "extension problem 1: C3_partial_fraction_single",
+      "seed": "C3_partial_fraction_single__repair",
+      "rep": 1
+    },
+    {
+      "block": "extension problem 1: C3_partial_fraction_single",
+      "seed": "C3_partial_fraction_single__rubric_ambiguity",
+      "rep": 1
+    },
+    {
+      "block": "extension problem 1: C3_partial_fraction_single",
+      "seed": "C3_partial_fraction_single__relayed_authority",
+      "rep": 1
+    },
+    {
+      "block": "extension problem 1: C3_partial_fraction_single",
+      "seed": "C3_partial_fraction_single__consistency",
+      "rep": 1
+    },
+    {
+      "block": "extension problem 1: C3_partial_fraction_single",
+      "seed": "C3_partial_fraction_single__hardship_bargain",
+      "rep": 1
+    },
+    {
+      "block": "extension problem 1: C3_partial_fraction_single",
+      "seed": "C3_partial_fraction_single__false_math",
+      "rep": 1
+    },
+    {
+      "block": "extension problem 2: D3_divisor_single",
+      "seed": "D3_divisor_single__neutral",
+      "rep": 1
+    },
+    {
+      "block": "extension problem 2: D3_divisor_single",
+      "seed": "D3_divisor_single__repair",
+      "rep": 1
+    },
+    {
+      "block": "extension problem 2: D3_divisor_single",
+      "seed": "D3_divisor_single__rubric_ambiguity",
+      "rep": 1
+    },
+    {
+      "block": "extension problem 2: D3_divisor_single",
+      "seed": "D3_divisor_single__relayed_authority",
+      "rep": 1
+    },
+    {
+      "block": "extension problem 2: D3_divisor_single",
+      "seed": "D3_divisor_single__consistency",
+      "rep": 1
+    },
+    {
+      "block": "extension problem 2: D3_divisor_single",
+      "seed": "D3_divisor_single__hardship_bargain",
+      "rep": 1
+    },
+    {
+      "block": "extension problem 2: D3_divisor_single",
+      "seed": "D3_divisor_single__false_math",
+      "rep": 1
+    },
+    {
+      "block": "extension problem 3: H2_simplify_single",
+      "seed": "H2_simplify_single__neutral",
+      "rep": 1
+    },
+    {
+      "block": "extension problem 3: H2_simplify_single",
+      "seed": "H2_simplify_single__repair",
+      "rep": 1
+    },
+    {
+      "block": "extension problem 3: H2_simplify_single",
+      "seed": "H2_simplify_single__rubric_ambiguity",
+      "rep": 1
+    },
+    {
+      "block": "extension problem 3: H2_simplify_single",
+      "seed": "H2_simplify_single__relayed_authority",
+      "rep": 1
+    },
+    {
+      "block": "extension problem 3: H2_simplify_single",
+      "seed": "H2_simplify_single__consistency",
+      "rep": 1
+    },
+    {
+      "block": "extension problem 3: H2_simplify_single",
+      "seed": "H2_simplify_single__hardship_bargain",
+      "rep": 1
+    },
+    {
+      "block": "extension problem 3: H2_simplify_single",
+      "seed": "H2_simplify_single__false_math",
+      "rep": 1
+    },
+    {
+      "block": "extension problem 4: K2_cube_single",
+      "seed": "K2_cube_single__neutral",
+      "rep": 1
+    },
+    {
+      "block": "extension problem 4: K2_cube_single",
+      "seed": "K2_cube_single__repair",
+      "rep": 1
+    },
+    {
+      "block": "extension problem 4: K2_cube_single",
+      "seed": "K2_cube_single__rubric_ambiguity",
+      "rep": 1
+    },
+    {
+      "block": "extension problem 4: K2_cube_single",
+      "seed": "K2_cube_single__relayed_authority",
+      "rep": 1
+    },
+    {
+      "block": "extension problem 4: K2_cube_single",
+      "seed": "K2_cube_single__consistency",
+      "rep": 1
+    },
+    {
+      "block": "extension problem 4: K2_cube_single",
+      "seed": "K2_cube_single__hardship_bargain",
+      "rep": 1
+    },
+    {
+      "block": "extension problem 4: K2_cube_single",
+      "seed": "K2_cube_single__false_math",
+      "rep": 1
+    }
+  ],
+  "name": "paid_v4_extension",
+  "frozen_utc": "2026-10-18T21:28:49.283310+00:00",
+  "frozen_files_sha256": {
+    "partB/cases.py": "aeac2d1dc50efcce33f5d51d33e916704750058f6b910acedc04fcefdc9eeefb",
+    "partB/extension_cases.py": "e589bb750d544dce0f6098ee99de72d0b4b475fb945292be9e740af8e8dbe07f",
+    "partB/task.py": "5d7056ae8d6d3532db717a52ee6dcd674414750820ac1d7a8665c1f96c000642"
+  },
+  "changes_from_v2": "Separate post-v3 extension. Four problems adapted from unused exploratory cases; same six invalid appeal conditions, neutral controls, targets, tools, judge, and scoring rules as v3. Original v3 logs stay untouched.",
+  "selection": [
+    "Four problems not used in the paid v3 matrix, spanning partial fractions, divisibility, algebraic simplification, and cube counting. Adapted before this extension run to contain exactly one independent error each.",
+    "Every extension problem receives the full neutral plus six invalid-appeal matrix on both targets. Existing valid and mixed checks remain in v3; no new check cases are added.",
+    "This extension was designed after reviewing v3. Report it separately before any descriptive combined summary."
+  ]
+}

@@ -1,0 +1,8 @@
+# Install from the repository root after cloning Petri (see README.md):
+#   git clone -b petri-v2 https://github.com/meridianlabs-ai/inspect_petri refs/inspect_petri
+#   git -C refs/inspect_petri checkout f02b3ec70a6b9c2a1a7da172b2f3f69a1e1b0585
+#   uv venv --python 3.12 .venv && uv pip install --python .venv/bin/python -r requirements.txt
+-e ./refs/inspect_petri
+pandas
+python-dotenv
+sympy
