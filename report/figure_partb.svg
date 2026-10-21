@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 148.0" width="700" height="148.0" font-family="-apple-system, Helvetica Neue, Helvetica, Arial, sans-serif" role="img" aria-label="Wrong grades by appeal type and model on problems each model graded correctly without an appeal">
+<rect x="0" y="2" width="10" height="10" rx="2" fill="#2a78d6"/>
+<text x="15" y="11" font-size="11" fill="#52514e">Wrong in the first reply to the appeal</text>
+<rect x="261.20000000000005" y="2" width="10" height="10" rx="2" fill="#eb6834"/>
+<text x="276.20000000000005" y="11" font-size="11" fill="#52514e">Correct at first, wrong after a later push</text>
+<text x="0.0" y="27" font-size="11.5" font-weight="600" fill="#0b0b0b">Claude Haiku 4.5</text>
+<text x="340.0" y="27" font-size="10.5" fill="#52514e" text-anchor="end">66 appeals on 11 problems: 8 wrong at first, 1 later</text>
+<line x1="128.0" y1="35" x2="128.0" y2="122.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="128.0" y="135.0" font-size="9.5" fill="#52514e" text-anchor="middle">0</text>
+<line x1="168.0" y1="35" x2="168.0" y2="122.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="168.0" y="135.0" font-size="9.5" fill="#52514e" text-anchor="middle">1</text>
+<line x1="208.0" y1="35" x2="208.0" y2="122.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="208.0" y="135.0" font-size="9.5" fill="#52514e" text-anchor="middle">2</text>
+<line x1="248.0" y1="35" x2="248.0" y2="122.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="248.0" y="135.0" font-size="9.5" fill="#52514e" text-anchor="middle">3</text>
+<line x1="288.0" y1="35" x2="288.0" y2="122.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="288.0" y="135.0" font-size="9.5" fill="#52514e" text-anchor="middle">4</text>
+<text x="120.0" y="45.5" font-size="10.5" fill="#0b0b0b" text-anchor="end">Rubric interpretation</text>
+<rect x="128.0" y="38.0" width="118" height="8.5" rx="2" fill="#2a78d6"/>
+<rect x="248.0" y="38.0" width="38" height="8.5" rx="2" fill="#eb6834"/>
+<text x="292.0" y="45.5" font-size="10" fill="#0b0b0b">4</text>
+<text x="120.0" y="60.0" font-size="10.5" fill="#0b0b0b" text-anchor="end">False math</text>
+<rect x="128.0" y="52.5" width="78" height="8.5" rx="2" fill="#2a78d6"/>
+<text x="212.0" y="60.0" font-size="10" fill="#0b0b0b">2</text>
+<text x="120.0" y="74.5" font-size="10.5" fill="#0b0b0b" text-anchor="end">Classmate consistency</text>
+<rect x="128.0" y="67.0" width="78" height="8.5" rx="2" fill="#2a78d6"/>
+<text x="212.0" y="74.5" font-size="10" fill="#0b0b0b">2</text>
+<text x="120.0" y="89.0" font-size="10.5" fill="#0b0b0b" text-anchor="end">Hardship</text>
+<rect x="128.0" y="81.5" width="38" height="8.5" rx="2" fill="#2a78d6"/>
+<text x="172.0" y="89.0" font-size="10" fill="#0b0b0b">1</text>
+<text x="120.0" y="103.5" font-size="10.5" fill="#0b0b0b" text-anchor="end">Post-submission repair</text>
+<text x="130.0" y="103.5" font-size="10" fill="#52514e">0</text>
+<text x="120.0" y="118.0" font-size="10.5" fill="#0b0b0b" text-anchor="end">Claimed authority</text>
+<text x="130.0" y="118.0" font-size="10" fill="#52514e">0</text>
+<text x="360.0" y="27" font-size="11.5" font-weight="600" fill="#0b0b0b">GPT-5 mini</text>
+<text x="700.0" y="27" font-size="10.5" fill="#52514e" text-anchor="end">72 appeals on 12 problems: 4 wrong at first, 0 later</text>
+<line x1="488.0" y1="35" x2="488.0" y2="122.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="488.0" y="135.0" font-size="9.5" fill="#52514e" text-anchor="middle">0</text>
+<line x1="528.0" y1="35" x2="528.0" y2="122.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="528.0" y="135.0" font-size="9.5" fill="#52514e" text-anchor="middle">1</text>
+<line x1="568.0" y1="35" x2="568.0" y2="122.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="568.0" y="135.0" font-size="9.5" fill="#52514e" text-anchor="middle">2</text>
+<line x1="608.0" y1="35" x2="608.0" y2="122.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="608.0" y="135.0" font-size="9.5" fill="#52514e" text-anchor="middle">3</text>
+<line x1="648.0" y1="35" x2="648.0" y2="122.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="648.0" y="135.0" font-size="9.5" fill="#52514e" text-anchor="middle">4</text>
+<text x="480.0" y="45.5" font-size="10.5" fill="#0b0b0b" text-anchor="end">Rubric interpretation</text>
+<text x="490.0" y="45.5" font-size="10" fill="#52514e">0</text>
+<text x="480.0" y="60.0" font-size="10.5" fill="#0b0b0b" text-anchor="end">False math</text>
+<rect x="488.0" y="52.5" width="78" height="8.5" rx="2" fill="#2a78d6"/>
+<text x="572.0" y="60.0" font-size="10" fill="#0b0b0b">2</text>
+<text x="480.0" y="74.5" font-size="10.5" fill="#0b0b0b" text-anchor="end">Classmate consistency</text>
+<rect x="488.0" y="67.0" width="38" height="8.5" rx="2" fill="#2a78d6"/>
+<text x="532.0" y="74.5" font-size="10" fill="#0b0b0b">1</text>
+<text x="480.0" y="89.0" font-size="10.5" fill="#0b0b0b" text-anchor="end">Hardship</text>
+<text x="490.0" y="89.0" font-size="10" fill="#52514e">0</text>
+<text x="480.0" y="103.5" font-size="10.5" fill="#0b0b0b" text-anchor="end">Post-submission repair</text>
+<rect x="488.0" y="96.0" width="38" height="8.5" rx="2" fill="#2a78d6"/>
+<text x="532.0" y="103.5" font-size="10" fill="#0b0b0b">1</text>
+<text x="480.0" y="118.0" font-size="10.5" fill="#0b0b0b" text-anchor="end">Claimed authority</text>
+<text x="490.0" y="118.0" font-size="10" fill="#52514e">0</text>
+</svg>

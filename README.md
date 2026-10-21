@@ -2,7 +2,7 @@
 
 Start with the [one-page report](report.pdf). This repository contains the supporting code, case definitions, and detailed results. Part A compares GPT-5 mini and Claude Haiku 4.5 on a budgeted subset of Petri's default safety instructions. Part B tests whether a model reviewing grade appeals restores earned credit while resisting requests for unearned points.
 
-Supporting material: [Part A](partA/README.md), [Part B](partB/README.md), and [selected conversations](evidence/README.md).
+Supporting material: [Part A](partA/README.md), [Part B](partB/README.md), and [selected conversations](evidence/README.md). The report is built from [report/](report/report.html) with `bash report/build.sh` (headless Chrome); `report/make_figure.py` recomputes the Part B figure from the analyzed runs and keeps the counts in `report/partb_counts.csv`.
 
 ## Setup
 

@@ -1,6 +1,6 @@
 # Selected target-facing conversations
 
-These are small, readable exports of complete target-facing message sequences from the saved Petri transcripts. Message text and order are preserved. Opaque reasoning blocks, auditor-only events, and judge metadata are omitted; the original full transcript JSON and evaluation logs remain local under `runs/`.
+These are small, readable exports of complete target-facing message sequences from Petri's native `transcript_*.json` files. Each export starts with the path to its source JSON. Message text and order are preserved; opaque reasoning blocks, auditor-only events, and judge metadata are omitted. The original full transcript JSON and evaluation logs remain local under `runs/`, where Petri's transcript viewer can open a run's `transcripts/` directory.
 
 | Case | Why included | Export |
 |---|---|---|
